@@ -5,6 +5,7 @@ import ShowBook from './components/ShowBook';
 import ShowAdmin from './components/ShowAdmin';
 import './App.css'
 import { Toaster } from 'react-hot-toast';
+import Home from './components/Home';
 
 const App = () => {
 
@@ -52,6 +53,7 @@ const App = () => {
         <hr />
 
         <Routes>
+        <Route path='/' element={<Home/>}/>
         <Route
             path="/admin"
             element={<Admin addBook={addBook} bookshelf={bookshelf} deleteBook={deleteBook} editBook={editBook} />}
